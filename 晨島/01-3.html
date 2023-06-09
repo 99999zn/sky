@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $(function () {
+          $('body').scrollspy({ target: '#navbar' });
+        });
+      </script>
+
+<style>
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color:#b5b5b5ca;
+    /* 下面是箭頭顏色 */
+    color: rgb(218, 218, 218);
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 100px;
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: #848484; 
+  }
+
+
+  /* 以下是nav按鈕 */
+  #navimg {
+    background-color: #8585854a;
+    color: rgba(96, 96, 96, 0.363);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #navimg:hover {
+    background-color: #424242be;
+  }
+</style>
+
+
+<style>
+    .box2{
+            background-image: url(SKY_20230427_150529_.jpg);
+            background-size: cover;
+            
+       }
+
+    .nav-item img {
+      width: 400px;
+      
+    }
+
+    
+  </style>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body data-spy="scroll" data-target="#navbar" style="position: relative;" class="box2 vh-100 bg-opacity-25">
+     <!-- 最上端navbar -->
+    
+     <div class="  bg-gradient fixed-top " style="height: 80px; "></div>
+     <div class="  bg-gradient fixed-top " style="height: 80px; "></div>
+     
+    
+     
+     <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-gradient ">
+           
+            <div class="container-fluid mt-2 ">
+            
+              
+              <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="navbar-brand" href="#"><p class=" h5 d-flex justify-content-evenly me-5 "><i>首頁</i></p></a>
+                    <a class="nav-link" href="https://bootstrap5.hexschool.com/docs/5.1/components/navbar/"><p class=" h6 "><i>◆   遇境</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3 fw-bold"><i><b>◆   晨島</b></i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   雲野</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   雨林</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   霞谷</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   幕土</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   禁閣</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   其他</i></p></a>
+                    
+                  </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+     <div style="height: 60px;" class="bg-gradient"></div>
+   
+     <!-- 挑選圖片 -->
+    <nav class="navbar navbar-expand-md justify-content-center bg-opacity-50" id="navbar" style="height: 400px;">
+    <ul class="navbar-nav container ">
+      <li class="nav-item m-2" id="navimg">
+        <a class="nav-link bg-dark rounded bg-opacity-25 border border-1 border-secondary" href="#section1">
+          <img class="rounded" src="SKY_20201109_195533_.jpg" alt="Button 1" style="height: auto;">
+        </a>
+      </li>
+      
+      <li class="nav-item m-2" id="navimg">
+        <a class="nav-link bg-dark rounded bg-opacity-25 border border-1 border-secondary" href="#section2">
+          <img class="rounded" src="SKY_20201007_223127_.jpg" alt="Button 2" style="height: auto;">
+        </a>
+      </li>
+     
+      <li class="nav-item m-2" id="navimg">
+        <a class="nav-link bg-dark rounded bg-opacity-25 border border-1 border-secondary" href="#section3">
+          <img class="rounded" src="SKY_20210118_153805_.jpg" alt="Button 2" style="height: auto;">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+
+<!-- 第一張 -->
+  <div  id="section1" style="height: 700px; background-color: rgb(54, 54, 54);" class="bg-gradient">
+    <div class="position-relative container" style="height: 700px; width: 1500px;">
+       
+      <p class="text-start text-light opacity-25 h1 position-absolute bottom-0 end-0 fs-1 opacity-50 p-2 border border-2 border-light rounded" style="width: 300px; height: 500px;">
+        <b>預言山谷</b>
+     </p>
+
+      <p class="text-start text-light h5 position-absolute bottom-0 end-0 p-3" style="width: 300px; height: 370px;">
+          <b>試煉石</b>
+      </p>
+      
+      <p class="text-start text-light position-absolute bottom-0 end-0 p-3 lh-lg" style="width: 300px; height: 310px;">
+          <b>
+              玩家通過完成試煉，就可以幫助先祖，點亮試煉石上的標記以及山谷內的壁畫。通過所有的挑戰後，山谷會變得很好看。
+          </b>
+      </p>
+
+      <p class="text-light text-start position-absolute bottom-0 start-0 font-monospace lh-lg opacity-50" style="width: 1000px; height: 100px; ">
+        <b>
+          ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ 
+
+        </b>
+      </p>
+
+      <p class="h3 text-light text-start position-absolute top-0 start-0 font-monospace lh-lg opacity-50" style="width: 1400px; height: 100px; ">
+        <b>
+          ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼
+
+        </b>
+      </p>
+      <img src="SKY_20201109_195533_.jpg" alt="Button 2" style="height: 450px; width: auto;" class="position-absolute top-50 start-0 translate-middle-y rounded">
+ 
+      <!-- 補充圖片 -->
+      <div class="row position-absolute bottom-0 start-0 rounded">
+        
+         <div class="col-md-4 myTest">
+           <img src="SKY_20230427_150529_.jpg"style="height:80px; width: auto;" class="rounded-2">
+         </div>
+        
+         <div class="col-md-4 myTest">
+           <img src="SKY_20201109_195536_.jpg"style="height:80px; width: auto;" class="rounded-2">
+         </div>
+
+         <div class="col-md-4 myTest">
+          <img src="SKY_20201007_221741_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+
+      
+      </div>
+   
+    </div>
+  </div>
+  
+ 
+  
+  <!-- 第二張 -->
+  <div id="section2" style="height: 700px; background-color: rgb(54, 54, 54);">
+    <div class="position-relative container" style="height: 700px; width: 1500px;">
+     
+      <p class="text-start  text-light opacity-25 h1 position-absolute bottom-0 start-0 fs-1 opacity-50 p-2 border border-2 border-light rounded" style="width: 300px; height: 500px;">
+        <b>預言山谷</b>
+     </p>
+
+      <p class="text-start text-light h5 position-absolute bottom-0 start-0 p-3" style="width: 300px; height: 370px;">
+          <b>水之試煉</b>
+      </p>
+      
+      <p class=" text-start text-light position-absolute bottom-0 start-0 lh-lg p-3" style="width: 300px; height: 310px;">
+          <b>
+              預言山谷裡有四個試煉的路線，分別是水、風、火、土，這張是位於水之試煉。通關後點亮試煉的石像，就會有一束光直通天際。代表你完成了這個路線的挑戰。
+          </b>
+      </p>
+
+      <p class="text-light text-start position-absolute bottom-0 end-0 font-monospace lh-lg opacity-50" style="width: 1000px; height: 100px; ">
+        <b>
+          ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ 
+
+        </b>
+      </p>
+
+      <img src="SKY_20201007_223127_.jpg" alt="Button 2" style="height: 450px; width: auto;" class="position-absolute top-50 end-0 translate-middle-y rounded">
+       
+      <!-- 補充圖片 -->
+      <div class="row position-absolute bottom-0 end-0 rounded">
+        
+        <div class="col-md-4 myTest">
+          <img src="SKY_20210319_232325_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+
+        <div class="col-md-4 myTest">
+          <img src="SKY_20210319_232247_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+
+        <div class="col-md-4 myTest">
+          <img src="SKY_20210319_233204_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+     
+     </div>
+   </div>
+  </div>
+
+  <!-- 第三張 -->
+  <div id="section3" style="height: 700px; background-color: rgb(54, 54, 54);">
+    <div class="position-relative container" style="height: 700px; width: 1500px;">
+     
+      <p class="text-start text-light opacity-25 h1 position-absolute bottom-0 end-0 fs-1 opacity-50 p-2 border border-2 border-light rounded" style="width: 300px; height: 500px;">
+        <b>預言山谷</b>
+     </p>
+
+      <p class="text-start text-light h5 position-absolute bottom-0 end-0 p-3" style="width: 300px; height: 370px;">
+          <b>黑炭朋友</b>
+      </p>
+      
+      <p class="text-start text-light position-absolute bottom-0 end-0 p-3 lh-lg" style="width: 300px; height: 310px;">
+          <b>
+            那時候我們無法通過挑戰一直死掉，結果突然發現有一個朋友直接黑掉，我們大家笑得要死，說他是試煉裡的貞子地縛靈，結果他完全不知道自己黑掉，所以就拍了這張照片給他看。
+          </b>
+      </p>
+
+      <p class="text-light text-start text-light position-absolute bottom-0 start-0 font-monospace lh-lg opacity-50" style="width: 1000px; height: 100px; ">
+        <b>
+          ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ 
+
+        </b>
+      </p>
+      
+      <img src="SKY_20210118_153805_.jpg" alt="Button 2" style="height: 450px; width: auto;" class="position-absolute top-50 start-0 translate-middle-y rounded-3">
+   
+       <!-- 補充圖片 -->
+       <div class="row position-absolute bottom-0 start-0 rounded">
+        
+        <div class="col-md-3 myTest">
+          <img src="SKY_20210118_153737_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+
+        <div class="col-md-3 myTest">
+          <img src="SKY_20210118_153813_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+
+        <div class="col-md-3 myTest">
+          <img src="SKY_20210411_214225_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+
+        <div class="col-md-3 myTest">
+          <img src="SKY_20210411_212216_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+
+     
+      </div>
+   
+    </div>
+   
+  </div>
+
+  <div style="height: 45px; background-color: rgb(54, 54, 54);"></div>
+    
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="回到頂端">↑</button>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    });
+
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

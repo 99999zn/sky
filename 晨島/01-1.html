@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $(function () {
+          $('body').scrollspy({ target: '#navbar' });
+        });
+      </script>
+
+<style>
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color:#b5b5b5ca;
+    /* 下面是箭頭顏色 */
+    color: rgb(218, 218, 218);
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 100px;
+  }
+
+  #scrollToTopBtn:hover {
+    background-color: #848484; 
+  }
+
+
+  /* 以下是nav按鈕 */
+  #navimg {
+    background-color: #ffffff23;
+    color: rgba(240, 240, 240, 0.212);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  #navimg:hover {
+    background-color: #f0f0f0be;
+  }
+</style>
+
+
+<style>
+    .box2{
+            background-image: url(SKY_20230427_150011_.jpg);
+            background-size: cover;
+            
+       }
+
+    .nav-item img {
+      width: 400px;
+      
+    }
+
+    
+  </style>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body data-spy="scroll" data-target="#navbar" style="position: relative;" class="box2 vh-100 bg-opacity-25">
+     <!-- 最上端navbar -->
+    
+     <div class="  bg-gradient fixed-top " style="height: 80px; "></div>
+     <div class="  bg-gradient fixed-top " style="height: 80px; "></div>
+     
+    
+     
+     <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top bg-gradient ">
+           
+            <div class="container-fluid mt-2 ">
+            
+              
+              <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="navbar-brand" href="#"><p class=" h5 d-flex justify-content-evenly me-5 "><i>首頁</i></p></a>
+                    <a class="nav-link" href="https://bootstrap5.hexschool.com/docs/5.1/components/navbar/"><p class=" h6 "><i>◆   遇境</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3 fw-bold"><i><b>◆   晨島</b></i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   雲野</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   雨林</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   霞谷</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   幕土</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   禁閣</i></p></a>
+                    <a class="nav-link" href="#"><p class=" h6 ms-3"><i>◆   其他</i></p></a>
+                    
+                  </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+     <div style="height: 60px;" class="bg-gradient"></div>
+   
+     <!-- 挑選圖片 -->
+    <nav class="navbar navbar-expand-md justify-content-center bg-opacity-50" id="navbar" style="height: 400px;">
+    <ul class="navbar-nav container ">
+      <li class="nav-item m-2" id="navimg">
+        <a class="nav-link bg-light rounded bg-opacity-25 border border-1" href="#section1">
+          <img class="rounded" src="SKY_20201112_135631_.jpg" alt="Button 1" style="height: auto;">
+        </a>
+      </li>
+      
+      <li class="nav-item m-2" id="navimg">
+        <a class="nav-link bg-light rounded bg-opacity-25 border border-1" href="#section2">
+          <img class="rounded" src="SKY_20201107_144941_.jpg" alt="Button 2" style="height: auto;">
+        </a>
+      </li>
+     
+      <li class="nav-item m-2" id="navimg">
+        <a class="nav-link bg-light rounded bg-opacity-25 border border-1" href="#section3">
+          <img class="rounded" src="SKY_20201215_205815_.jpg" alt="Button 2" style="height: auto;">
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+
+<!-- 第一張 -->
+  <div  id="section1" style="height: 700px; background-color: rgb(214, 214, 214);" class="bg-gradient">
+    <div class="position-relative container" style="height: 700px; width: 1500px;">
+       
+      <p class="text-start h1 position-absolute bottom-0 end-0 fs-1 opacity-25 p-2 border border-2 border-dark rounded" style="width: 300px; height: 500px;">
+        <b>晨島</b>
+     </p>
+
+      <p class="text-start h5 position-absolute bottom-0 end-0 p-3" style="width: 300px; height: 370px;">
+          <b>神殿</b>
+      </p>
+      
+      <p class="text-start position-absolute bottom-0 end-0 p-3 lh-lg" style="width: 300px; height: 310px;">
+          <b>
+              每張大地圖都會有一座神殿，晨島的神殿是我覺得最美的一座。當你從高台躍下，乘著風向終點飛去，看到的就會是一座逆著光，散發著神聖光芒的晨島神殿。許多光束從邊灑落真的很美，光遇的美術我真的哭爛。
+          </b>
+      </p>
+
+      <p class="text-secondary text-start position-absolute bottom-0 start-0 font-monospace lh-lg opacity-25" style="width: 1000px; height: 100px; ">
+        <b>
+          ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ 
+
+        </b>
+      </p>
+
+      <p class="h3 text-secondary text-start position-absolute top-0 start-0 font-monospace lh-lg opacity-25" style="width: 1400px; height: 100px; ">
+        <b>
+          ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼
+
+        </b>
+      </p>
+      <img src="SKY_20201112_135631_.jpg" alt="Button 2" style="height: 450px; width: auto;" class="position-absolute top-50 start-0 translate-middle-y rounded">
+ 
+      <!-- 補充圖片 -->
+      <div class="row position-absolute bottom-0 start-0 rounded">
+        
+         <div class="col-md-6 myTest">
+           <img src="SKY_20230427_150011_.jpg"style="height:80px; width: auto;" class="rounded-2">
+         </div>
+        
+         <div class="col-md-6 myTest">
+           <img src="SKY_20201107_144929_.jpg"style="height:80px; width: auto;" class="rounded-2">
+         </div>
+
+      </div>
+   
+    </div>
+  </div>
+  
+ 
+  
+  <!-- 第二張 -->
+  <div id="section2" style="height: 700px; background-color: rgb(214, 214, 214);">
+    <div class="position-relative container" style="height: 700px; width: 1500px;">
+     
+      <p class="text-start h1 position-absolute bottom-0 start-0 fs-1 opacity-25 p-2 border border-2 border-dark rounded" style="width: 300px; height: 500px;">
+        <b>晨島</b>
+     </p>
+
+      <p class="text-start h5 position-absolute bottom-0 start-0 p-3" style="width: 300px; height: 370px;">
+          <b>雲層</b>
+      </p>
+      
+      <p class=" text-start position-absolute bottom-0 start-0 lh-lg p-3" style="width: 300px; height: 310px;">
+          <b>
+              晨島給人一種夢幻的感覺，彷彿自己穿過雲層在天國遨遊。厚厚的雲也是晨島的一項標誌，只要有雲在，飛行時就不用害怕墜落，因為雲會在底下接住你。
+          </b>
+      </p>
+
+      <p class="text-secondary text-start position-absolute bottom-0 end-0 font-monospace lh-lg opacity-25" style="width: 1000px; height: 100px; ">
+        <b>
+          ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ 
+
+        </b>
+      </p>
+
+      <img src="SKY_20201107_144941_.jpg" alt="Button 2" style="height: 450px; width: auto;" class="position-absolute top-50 end-0 translate-middle-y rounded">
+       
+      <!-- 補充圖片 -->
+      <div class="row position-absolute bottom-0 end-0 rounded">
+        
+        <div class="col-md-4 myTest">
+          <img src="SKY_20201109_155344_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+       
+        <div class="col-md-4 myTest">
+          <img src="SKY_20200920_001514_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+
+        <div class="col-md-4 myTest">
+          <img src="SKY_20200919_220014_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+      
+     
+     </div>
+   </div>
+  </div>
+
+  <!-- 第三張 -->
+  <div id="section3" style="height: 700px; background-color: rgb(214, 214, 214);">
+    <div class="position-relative container" style="height: 700px; width: 1500px;">
+     
+      <p class="text-start h1 position-absolute bottom-0 end-0 fs-1 opacity-25 p-2 border border-2 border-dark rounded" style="width: 300px; height: 500px;">
+        <b>晨島</b>
+     </p>
+
+      <p class="text-start h5 position-absolute bottom-0 end-0 p-3" style="width: 300px; height: 370px;">
+          <b>吉他與海</b>
+      </p>
+      
+      <p class="text-start position-absolute bottom-0 end-0 p-3 lh-lg" style="width: 300px; height: 310px;">
+          <b>
+            靜謐的晨島是一個演奏的好地方，空靈的回音以及平靜的大海，彈琴時還能聽到海潮拍打岸邊的聲音。空曠的景色也很適合放鬆心情。我最喜歡帶著吉他來這裡享受彈琴的時光。
+          </b>
+      </p>
+
+      <p class="text-secondary text-start position-absolute bottom-0 start-0 font-monospace lh-lg opacity-25" style="width: 1000px; height: 100px; ">
+        <b>
+          ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ ♥ ♦ ♣ ♠ 
+
+        </b>
+      </p>
+      
+      <img src="SKY_20201215_205815_.jpg" alt="Button 2" style="height: 450px; width: auto;" class="position-absolute top-50 start-0 translate-middle-y rounded-3">
+   
+       <!-- 補充圖片 -->
+       <div class="row position-absolute bottom-0 start-0 rounded">
+        
+        <div class="col-md-6 myTest">
+          <img src="SKY_20201216_181119_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+       
+        <div class="col-md-6 myTest">
+          <img src="SKY_20201207_233645_.jpg"style="height:80px; width: auto;" class="rounded-2">
+        </div>
+
+      
+     
+      </div>
+   
+    </div>
+   
+  </div>
+
+  <div style="height: 45px; background-color: rgb(214, 214, 214);"></div>
+    
+  <button onclick="scrollToTop()" id="scrollToTopBtn" title="回到頂端">↑</button>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    });
+
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
